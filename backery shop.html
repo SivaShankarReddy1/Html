@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset Assignment</title>
+</head>
+<body>
+    <form>
+        <fieldset style="width: 900px;height: 700px;background-color:lightgray;"><legend style="font-size: 40px;color:blueviolet;">Bakery Shop</legend>
+        <table>
+            <tr style="color:blue;">
+                <td>
+                    <fieldset><legend style="font-size: 30px;">Enter Name</legend>
+                    <input pattern="[a-z]{1,25}" style="font-size: 30px; border: 0px;outline: 0px;" width="300px">
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset><legend style="font-size: 25px;">Enter Mobile</legend>     
+                    <label>Enter Country code</label>
+                    <input placeholder="Code" list="srd" required>
+                    <datalist id ="srd">
+                     <option>India +91</option>
+                     <option>US +61</option>
+                     <option>japan +14</option>
+                     <option>Italy +23</option>
+                     <option>Africa +34</option>
+                     <option>Germany +54</option>
+                     </datalist>
+                     <input pattern="[0-9]{10}" style="font-size: 25px; border: 0px;outline: 0px;" width="300px">
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset><legend style="font-size: 30px;">Enter Email</legend>
+                    <input type="email" style="font-size: 30px; border: 0px;outline: 0px;" width="300px">
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" style="font-size: 25px;color: red;">
+                </td>
+                <td>
+                    <input type="submit" value="verify" style="font-size: 25px;color: red;">
+                </td>
+            </tr>
+            <tr style="color:blueviolet;">
+                <td colspan="2">
+                    <fieldset><legend style="font-size: 20px;">Select flavor & Weight of Cake</legend>
+                        <table>
+                        <tr>
+                            <td>
+                            <input placeholder="Flavor" list="sd" style="font-size: 25px;">
+                            <datalist id="sd">
+                                <option>Select</option>
+                                <option>Vanila </option>
+                                <option>Straberry</option>
+                                <option>Chocolate</option>
+                                <option>Red voilet</option>
+                                <option>Black forest</option>
+                                <option>Butter Scotch</option>
+                                <option>Truffle</option>
+                            </td>
+                            <td>
+                            <input placeholder="Weight" list="sc" style="font-size: 25px;">
+                            <datalist id="sc">
+                                <option>Select</option>
+                                <option>1Kg</option>
+                                <option>0.5kg</option>
+                                <option>1.5kg</option>
+                                <option>2kg</option>
+                                <option>5kg</option>
+                                <option>10kg</option>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                    <td>
+                        <fieldset style="width: 400px;"><legend style="font-size: 30px;">Enter Message</legend>
+                        <input pattern="[a-z,A-z]{1,30}" style="font-size: 25px; border: 0px;outline: 0px;" width="600px">
+                        </fieldset>
+                    </td>
+                    </fieldset>
+                </tr>
+                <tr style="color: blue;">
+                <td colspan="3">
+                    <fieldset><legend style="font-size: 30px;">Add</legend>
+                    <input type="checkbox" style="width:20px;height: 20px;"name="c">
+                    <label style="font-size: 30px;">Candals</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <input type="checkbox" style="width:20px;height: 20px;"name="c">
+                    <label style="font-size: 30px;">Birthday Blast</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <input type="checkbox" style="width:20px;height: 20px;"name="c">
+                    <label style="font-size: 30px;"for="">Flowers</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <input type="checkbox" style="width:20px;height: 20px;"name="c">
+                    <label style="font-size: 30px;"for="">Chocolates</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <input type="checkbox" style="width:20px;height: 20px;"name="c">
+                    <label style="font-size: 30px;"for="">Stickers</label>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td style="font-size: 20px;">
+                    <fieldset style="width:500px"><legend style="font-size: 30px;">Address</legend>
+                    <label > Enter Plot :</label>
+                    <input type="text" style="font-size: 20px;">
+                    <br><br>
+                    <label> Enter Area:</label>
+                    <input type="text" style="font-size: 20px;">
+                    <br><br>
+                    <label> Enter city&nbsp:</label>
+                    <input type="text" style="font-size: 20px;">
+                    <br><br>
+                    <label>Select City:</label>
+                    <input placeholder="City" list="sa" style="font-size: 25px;">
+                            <datalist id="sa">
+                                <option>Select</option>
+                                <option>Kadapa</option>
+                                <option>vijayawada</option>
+                                <option>Guntur</option>
+                                <option>kurnool</option>
+                                <option>Nellor</option>
+                                <option>Prakasam</option>
+                                <option>vizaq</option>
+                                <option>Rajamundry</option>
+                                <option>Bhimavaram</option>
+                                <option>thirupati</option>
+                            </datalist>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset style="width: 400px;"><legend style="font-size: 30px;">Select time to Delivery</legend>
+                    <input style="font-size: 25px;" placeholder="Time" list="sz">
+                    <datalist id="sz">
+                        <option>30min</option>
+                        <option>1hr</option>
+                        <option>1:30min</option>
+                        <option>2hrs</option>
+                        <option>3hrs</option>
+                        <option>5hrs</option>
+                        <option>1day</option>
+                    </datalist>
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+        <label style="font-size: 30px;">Select the payment mode:</label>
+        <input type="radio" name="as" style="width:20px;height: 20px;">
+        <label style="font-size: 25px;">Online</label>
+        <input type="radio" name="as"style="width:20px;height:20px;">
+        <label style="font-size: 25px;">Ofline</label>
+        <br><br>
+        <center>
+        <input type="submit" value="Order" style="font-size: 25px;">
+        <input type="submit" value="Reset" style="font-size: 25px;">
+
+        </center>
+    </fieldset>
+    </form>
+</body>
+</html>
